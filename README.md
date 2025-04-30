@@ -91,6 +91,28 @@ Follow these steps to set up and run the project locally.
 
 ---
 
+## 💾 Data Access
+
+The dataset is large, so please download it from Google Drive:
+
+[Road Accident Data on Google Drive](https://drive.google.com/drive/folders/16uh2Ea4bjAvQpWjsHl_pv9wi-lFgYXW1?usp=sharing)
+
+After downloading, organize the files as follows:
+```bash
+# Create data directories
+mkdir -p data/raw data/processed
+
+# Move files
+mv "path/to/Road Accident Data.csv" data/raw/
+mv "path/to/cleaned_accident_data.csv" data/processed/
+mv "path/to/model_predictions.csv" data/processed/
+```
+
+- **Raw Data** (`data/raw/`): `Road Accident Data.csv`
+- **Processed Data** (`data/processed/`): `cleaned_accident_data.csv`, `model_predictions.csv`
+
+---
+
 ## 🖥️ Usage
 
 ### NLP Pipeline
@@ -112,7 +134,6 @@ Follow these steps to set up and run the project locally.
 3. Interact with the report: slicers, maps, charts.
 
 ---
-
 
 
 ## 📄 License
